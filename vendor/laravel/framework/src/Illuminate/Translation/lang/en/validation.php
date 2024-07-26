@@ -189,6 +189,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'question'=>'問題',
+        'answer'=>'答え',
+    ],
+
 
 ];

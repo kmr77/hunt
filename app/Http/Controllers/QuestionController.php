@@ -28,13 +28,20 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
+        $inputs=request()->validate([
+            'category_num'=>'required|max:1',
+            'question'=>'required|max:500',
+            'answer'=>'required|max:300',
+        ]);
+
         $question=new Question();
-        $question->category_num=$request->category_num;
-        $question->question=$request->question;
-        $question->answer=$request->answer;
+        $question->category_num=$inputs['category_num'];
+        $question->question=$inputs['question'];
+        $question->answer=$inputs['answer'];
         $question->user_id=auth()->user()->id;
+        $question->is_deleted=0;
         $question->save();
-        return redirect()->route('question.create');
+        return redirect()->route('question.create')->with('message', '投稿を作成しました');;
     }
 
     /**
