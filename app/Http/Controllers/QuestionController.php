@@ -12,7 +12,9 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        //
+        $questions=Question::all();
+        $user=auth()->user();
+        return view('question.index', compact('questions', 'user'));
     }
 
     /**

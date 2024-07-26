@@ -16,10 +16,11 @@
                 <div class="w-full flex flex-col">
                 <label for="title" class="font-semibold leading-none mt-4">カテゴリ</label>
                 <select name="category_num" class="w-auto py-2 placeholder-gray-300 border border-gray-300 rounded-md">
-                    <option value="1">銃猟一種</option>
-                    <option value="2">銃猟二種</option>
-                    <option value="3">わな</option>
-                    <option value="4">網</option>
+                    <option value="0">法令｜全問題</option>
+                    <option value="1">銃猟一種のみ</option>
+                    <option value="2">銃猟二種のみ</option>
+                    <option value="3">わなのみ</option>
+                    <option value="4">網のみ</option>
                 </select>
                 </div>
             </div>

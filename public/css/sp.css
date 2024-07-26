@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;-webkit-text-size-adjust: none;}body{line-height:1.6;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}nav ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS Pゴシック", "MS PGothic", sans-serif;
+	color :#444;
+	overflow-x: hidden;
+    font-size:14px;
+}
+ul ,li {
+    list-style:none;
+}
+a {
+	text-decoration: none;
+}
+img {
+    width:100%;
+}
+.container {
+    margin:0 8px;
+}
+.question {
+    color: #000000;
+    font-size:16px;
+}
+.answer {
+    color: #ff0000;
+    font-size:14px;
+}
+.navi {
+    margin:24px 0 0;
+}
+.navi li {
+    font-size:18px;
+}
+.title-img {
+    text-align:center;
+    margin:24px 0;
+}
+.title {
+	border-bottom: 1px solid #444444;
+	margin: 5px;
+	text-align: center;
+}
+
+.breadcrumb {
+	background-color: #F8F8F8;
+	font-size: 70%;
+	margin: 5px;
+	padding: 5px;
+}
+
+.breadcrumb a {
+	background-color: #3399CC;
+	border-radius: 4px;
+	color: #FFFFFF;
+	padding: 2px 5px;
+}
+
+#accordion {
+	margin: 5px 5px 0;
+}
+
+#accordion dt{
+	border: 1px solid #B7D1DD;
+	cursor: pointer;
+	display: block;
+	font-size: 80%;
+	font-weight: bold;
+	padding: 10px;
+	margin-bottom: -1px;
+}
+
+#accordion dd{
+	background: #F8FFFF;
+	border: 1px solid #B7D1DD;
+	display: none;
+	font-size: 75%;
+	padding: 10px;
+	margin-bottom: -1px;
+}
+
+#accordion dt.active{
+	background:url(../../../it/images/arrow-top.png) 97% no-repeat;
+}
+
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #000ff0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #000ff0;
+    border-right: 3px solid #000ff0;
+    transform: translateY(20%) rotate(-45deg);
+}
+
+
+.category {
+	margin: 0 5px;
+}
+
+.category ul{
+	list-style: none;
+}
+
+.category ul li {
+	font-size: 80%;
+	font-weight: bold;
+	margin-bottom: -1px;
+}
+
+.category ul li a {
+	border: 1px solid #B7D1DD;
+	color: #444;
+	display: block;
+	padding: 10px;
+}
+
+.category li a.arrow{
+	position: relative;
+}
+
+.category li a.arrow:after{
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-top: 3px solid #3399CC;
+	border-right: 3px solid #3399CC;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -6px;
+}
+h2 {
+    background:#3399CC;
+    padding:8px 16px;
+    color:#fff;
+}
