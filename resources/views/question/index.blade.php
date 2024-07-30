@@ -13,7 +13,7 @@
         {{$user->name}}さん、こんにちは！
         <dl id="accordion">
         @foreach ($questions as $question)
-            <dt><span class="question">問{{ $question->id }}）{{ $question->question }}</span></dt>
+            <dt><span class="question">問{{ $question->id }}）{{ $question->question }}</span><a href="{{route('question.show', $question)}}"><span class="edit-btn">修正</span></a></dt>
             <dd><span class="answer">{{$question->answer}}</span></dd>
             @endforeach
         </dl>
