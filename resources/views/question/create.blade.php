@@ -14,7 +14,7 @@
             @csrf
             <div class="md:flex items-center mt-8">
                 <div class="w-full flex flex-col">
-                <label for="title" class="font-semibold leading-none mt-4">カテゴリ</label>
+                <label for="category_num" class="font-semibold leading-none mt-4">カテゴリ</label>
                 <select name="category_num" class="w-auto py-2 placeholder-gray-300 border border-gray-300 rounded-md">
                     <option value="0">法令｜全問題</option>
                     <option value="1">銃猟一種のみ</option>
